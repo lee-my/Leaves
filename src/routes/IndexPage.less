@@ -1,0 +1,41 @@
+.mainTop{
+  height: 60px;
+  background: rgba(255,255,255,.95);
+  border-bottom: 1px solid #eee;
+  a{
+    position: relative;
+    padding: 0 15px;
+    line-height: 60px;
+    display: block;
+    float: left;
+    transition: color .2s;
+    font-size: 16px;
+    margin-left: 10px;margin-right: 10px;
+  }
+  a.cur:after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #6190e8;
+    top: 0;left: 0;
+  }
+  a:hover{
+    color: #1abc9c;
+    transition: color .2s;
+    text-decoration: none;
+  }
+  .logo{
+    font-size: 18px;
+    width: 100px;
+    text-indent: -9999px;
+    background: url(../assets/logo.png) no-repeat left center;
+    background-size: auto 55%;
+    margin-right: 10px;
+  }
+}
+.center{
+  width: 1190px;
+  margin: 0 auto;
+  overflow: hidden;
+}
